@@ -100,6 +100,16 @@ a:hover {
   color:#069;
 }
 
+/* Make paper titles bold */
+p a {
+  font-weight: bold;
+}
+
+/* Exception for links in the header */
+header p a {
+  font-weight: normal;
+}
+
 a small {
   font-size:11px;
   color:#777;
