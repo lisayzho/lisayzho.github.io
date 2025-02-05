@@ -100,13 +100,19 @@ a:hover {
   color:#069;
 }
 
-/* Make paper titles bold */
-p a {
+/* Make only the first link in each paragraph bold (paper titles) */
+p a:first-of-type {
   font-weight: bold;
 }
 
-/* Exception for links in the header */
-header p a {
+/* Exception for header links and paragraphs that don't start with paper titles */
+header p a,
+p[style*="margin-bottom:0"] a:first-of-type {
+  font-weight: normal;
+}
+
+/* Additional exception for the "Featured in:" section */
+p strong + a:first-of-type {
   font-weight: normal;
 }
 
