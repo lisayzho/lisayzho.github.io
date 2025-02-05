@@ -119,22 +119,6 @@ section h2:first-of-type {
   clear: both;
 }
 
-/* Make only the first link in each paragraph bold (paper titles) */
-p a:first-of-type {
-  font-weight: bold;
-}
-
-/* Exception for header links and paragraphs that don't start with paper titles */
-header p a,
-p[style*="margin-bottom:0"] a:first-of-type {
-  font-weight: normal;
-}
-
-/* Additional exception for the "Featured in:" section */
-p strong + a:first-of-type {
-  font-weight: normal;
-}
-
 a small {
   font-size:11px;
   color:#777;
