@@ -166,7 +166,7 @@ header {
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
-  padding-right: 15px; 
+  padding-right: 5px; 
 }
 
 header ul {
@@ -226,7 +226,7 @@ section {
   width: 1010px; 
   float: right;
   padding-bottom: 50px;
-  margin-left: 20px; 
+  margin-left: 10px; 
 }
 
 small {
