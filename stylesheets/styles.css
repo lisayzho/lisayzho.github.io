@@ -106,6 +106,19 @@ section p:first-of-type {
   padding-left: 0;
 }
 
+/* Ensure headers and text stay within bounds */
+section h1, section h2, section h3, section p {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* Remove any margins that might be causing text to overflow */
+section h2:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+  clear: both;
+}
+
 /* Make only the first link in each paragraph bold (paper titles) */
 p a:first-of-type {
   font-weight: bold;
@@ -249,6 +262,7 @@ section {
   float: right;
   padding-bottom: 50px;
   margin-right: 30px; 
+  clear: right;
 }
 
 small {
@@ -270,7 +284,7 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 1200px) {
+@media print, screen and (max-width: 1100px) {
   .wrapper {
     width: auto;
     margin: 0;
@@ -289,6 +303,7 @@ footer {
     margin-right: 0;
   }
 }
+
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
